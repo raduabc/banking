@@ -1,3 +1,3 @@
 banking system
 
-C implementation of a basic banking system using UDP and TCP
+C implementation of a basic banking system using UDP and TCP for linux
