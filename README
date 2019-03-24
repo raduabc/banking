@@ -1,0 +1,11 @@
+Tema 2 PC
+Radu Cervinschi - 321CC
+
+client.c
+In bucla infinita, in cazul citirii de la tastatura, verific daca din acest proces este deja logat la server. In caz contrar trimit mesajul catre server.
+Cand se primeste mesajul, verific daca este mesaj de conectare sau deconectare ca sa setez variabila in care verific acest lucru. Indiferent de mesajul intors, il afisez si il scriu in log.
+
+server.c
+data_vec este un vector in care memorez datele clientilor din fisierul dat ca argument. Client_conectat este indicele clientului din acest vector, sau 0 daca nu este niciun client conectat (indexez vectorul de la 1).
+In bucla infinita verific daca primesc o conexiune noua, daca s-a inchis o conexiune, daca am primit un pachet nou, sau daca trebuie sa inchid serverul.
+Pentru fiecare pachet, ii verific primul cuvant, iar apoi modific utilizatorii activi, modific sau afisez datele despre acestia, sau nu fac nimic, in functie de ce comanda se primeste.
